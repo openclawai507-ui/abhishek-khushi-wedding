@@ -62,6 +62,6 @@ document.querySelectorAll('[data-calendar]').forEach(button=>button.addEventList
 }));
 document.querySelector('#share-invitation').addEventListener('click',async()=>{
  const data={title:'Abhishek & Khushi | Wedding Invitation',text:'Join us to celebrate Abhishek & Khushi, 22–23 November 2026 at Kogta Paradise, Bijainagar.',url:location.origin+location.pathname};
- try{if(navigator.share){await navigator.share(data)}else if(navigator.clipboard){await navigator.clipboard.writeText(data.url);toast('Invitation link copied. Site access permissions still apply.')}else{toast('Copy this page’s address to share the invitation.')}}catch(e){if(e.name!=='AbortError')toast('Copy this page’s address to share the invitation.')}
+ try{if(navigator.share){await navigator.share(data)}else if(navigator.clipboard){await navigator.clipboard.writeText(data.url);toast('Invitation link copied. Share it with your loved ones.')}else{toast('Copy this page’s address to share the invitation.')}}catch(e){if(e.name!=='AbortError')toast('Copy this page’s address to share the invitation.')}
 });
 updateScroll();
