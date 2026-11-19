@@ -9,7 +9,7 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="preload" href="assets/wedding-art.jpg" as="image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Noto+Serif+Devanagari:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="motion.css?v=ak-logo-1"><script src="app.js" defer></script><script src="motion.js" defer></script>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="motion.css?v=ak-logo-1"><link rel="stylesheet" href="garud.css?v=garud-1"><script src="app.js" defer></script><script src="motion.js?v=garud-1" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#invitation">Skip to invitation</a>
@@ -24,6 +24,39 @@
 <div class="portal-seal"><p lang="hi">॥ श्री गणेशाय नमः ॥</p><div class="seal-initials brand-logo"><img src="assets/ak-wedding-logo.jpg" alt="A & K gold wedding monogram" width="554" height="554"></div><p>ABHISHEK & KHUSHI</p><small>23 NOVEMBER 2026</small></div>
 <div class="portal-scroll-cue"><span class="scroll-spark" aria-hidden="true">✦</span><p>SCROLL TO UNFOLD OUR FOREVER</p><span aria-hidden="true">↓</span></div>
 <a class="skip-intro" href="#home">Enter invitation ↗</a>
+</div></section>
+<section class="garud-scroll" id="blessings" aria-labelledby="garud-title">
+<div class="garud-stage">
+<div class="garud-sky" aria-hidden="true"></div>
+<div class="garud-shloka"><span class="om-glyph" lang="hi" aria-hidden="true">ॐ</span><p lang="hi">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p></div>
+<div class="garud-halo" aria-hidden="true"></div>
+<div class="garud-blessed brand-logo"><img src="assets/ak-wedding-logo.jpg" alt="A & K wedding monogram, framed by a marigold varmala" width="554" height="554"></div>
+<div class="varmala" aria-hidden="true"><svg viewBox="0 0 200 240" id="varmala-svg"></svg></div>
+<svg class="garud" viewBox="0 0 300 200" aria-hidden="true">
+<defs>
+<linearGradient id="g-wing" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe3a0"/><stop offset=".45" stop-color="#d79a3c"/><stop offset="1" stop-color="#8a4a1c"/></linearGradient>
+<linearGradient id="g-wing-far" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c58a3a"/><stop offset="1" stop-color="#5e2f17"/></linearGradient>
+<linearGradient id="g-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6a94c"/><stop offset="1" stop-color="#93501f"/></linearGradient>
+<radialGradient id="g-glow"><stop offset="0" stop-color="#ffd98a" stop-opacity=".55"/><stop offset="1" stop-color="#ffd98a" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="160" cy="105" rx="150" ry="95" fill="url(#g-glow)"/>
+<g class="wing wing-far"><path d="M150 102C132 62 104 34 52 20C80 40 72 48 42 52C70 60 66 68 46 78C80 82 110 92 150 112Z" fill="url(#g-wing-far)"/></g>
+<path d="M104 120L58 104L64 117L50 126L64 130L56 142L106 130Z" fill="#a8622a"/><path d="M104 120L70 112M104 124L62 126M104 128L66 138" stroke="#f3cf87" stroke-width="1.2" opacity=".6"/>
+<path d="M96 120C120 96 176 92 206 100C222 104 230 112 224 121C202 132 150 138 106 130Z" fill="url(#g-body)"/>
+<path d="M150 130L156 146L150 150M174 128L180 146L174 150" stroke="#f1c46c" stroke-width="3" stroke-linecap="round" fill="none"/>
+<circle cx="222" cy="100" r="14" fill="#e8b25a"/>
+<path d="M233 95C248 95 252 104 245 113C243 106 239 104 233 107Z" fill="#f6dfa0"/>
+<circle cx="227" cy="97" r="2.2" fill="#2a1410"/>
+<path class="garud-crown" d="M211 89L214 75L219 84L223 70L227 84L232 75L234 89Z" fill="#ffd67a" stroke="#fff1c5" stroke-width=".8"/>
+<circle cx="223" cy="74" r="2" fill="#d9363e"/>
+<g class="wing wing-near"><path d="M168 106C152 62 122 26 70 8C96 32 88 40 58 42C88 54 82 62 56 68C90 74 122 88 162 118Z" fill="url(#g-wing)"/><path d="M162 108C140 80 112 56 76 40M158 112C132 92 104 76 72 62" stroke="#fff3cf" stroke-width="1" opacity=".55" fill="none"/></g>
+</svg>
+<div class="garud-copy"><p class="eyebrow">DIVINE BLESSINGS · <span lang="hi">शुभ आशीर्वाद</span></p><h2 id="garud-title">On Garud’s wings,<br><em>a blessing descends.</em></h2><p>Carried from the heavens with a garland of marigolds,<br class="desktop-only"> may Shri Ganesh bless this sacred union.</p></div>
+<svg class="garud-palace" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+<path d="M0 220V150H90V105H110V85L130 60L150 85V105H170V150H330V120C330 95 370 95 370 120V150H470V110H500V95C500 60 560 40 600 20C640 40 700 60 700 95V110H730V150H830V120C830 95 870 95 870 120V150H1030V105H1050V85L1070 60L1090 85V105H1110V150H1200V220Z"/>
+<g class="palace-lights"><rect x="122" y="112" width="8" height="14" rx="4"/><rect x="1062" y="112" width="8" height="14" rx="4"/><rect x="540" y="118" width="10" height="20" rx="5"/><rect x="595" y="112" width="10" height="26" rx="5"/><rect x="650" y="118" width="10" height="20" rx="5"/><rect x="345" y="160" width="10" height="18" rx="5"/><rect x="845" y="160" width="10" height="18" rx="5"/><rect x="230" y="172" width="8" height="14" rx="4"/><rect x="960" y="172" width="8" height="14" rx="4"/><rect x="430" y="172" width="8" height="14" rx="4"/><rect x="762" y="172" width="8" height="14" rx="4"/></g>
+</svg>
+<div class="diyas" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
 </div></section>
 <section id="home" class="hero">
 <div class="hero-copy">

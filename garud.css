@@ -1,0 +1,46 @@
+/* Divine blessings: Garud carries a marigold varmala over a diya-lit palace. Original SVG/CSS art. */
+.garud-scroll{height:260svh;background:#140f26;position:relative}
+.garud-stage{--vm-w:min(46vw,250px);position:sticky;top:0;height:100svh;min-height:560px;overflow:hidden;color:#f1dfb8;isolation:isolate;text-align:center}
+.garud-sky{position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse 70% 45% at 50% 100%,#c46a3a66,transparent 70%),radial-gradient(ellipse 60% 40% at 50% 46%,#5b2c4a,transparent 75%),linear-gradient(180deg,#0b0d24 0%,#1b1436 45%,#3a1a33 78%,#4d2131 100%)}
+.garud-sky:before{content:'';position:absolute;inset:0 0 35% 0;opacity:.75;background-image:radial-gradient(1.2px 1.2px at 12% 18%,#fff3d0,transparent),radial-gradient(1px 1px at 28% 8%,#fff,transparent),radial-gradient(1.4px 1.4px at 42% 26%,#ffe7b0,transparent),radial-gradient(1px 1px at 61% 12%,#fff,transparent),radial-gradient(1.3px 1.3px at 76% 22%,#fff3d0,transparent),radial-gradient(1px 1px at 88% 9%,#fff,transparent),radial-gradient(1.2px 1.2px at 94% 30%,#ffe7b0,transparent),radial-gradient(1px 1px at 6% 38%,#fff,transparent),radial-gradient(1px 1px at 35% 44%,#fff3d0,transparent),radial-gradient(1.1px 1.1px at 67% 40%,#fff,transparent);animation:garud-twinkle 6s ease-in-out infinite alternate}
+.garud-shloka{position:absolute;top:max(7%,56px);left:20px;right:20px;opacity:var(--shloka-opacity,1);transform:translateY(var(--shloka-y,0px))}
+.om-glyph{display:block;font-family:'Noto Serif Devanagari',serif;font-size:44px;line-height:1;color:#ffd98a;text-shadow:0 0 18px #ffb84d,0 0 46px #ff9d3a88;margin-bottom:12px;animation:om-breathe 4s ease-in-out infinite}
+.garud-shloka p{font-family:'Noto Serif Devanagari',serif;font-size:14px;line-height:1.9;color:#e9cf9c;letter-spacing:.3px}
+.garud-halo{position:absolute;left:50%;top:42%;width:calc(var(--vm-w) * 2.3);aspect-ratio:1;transform:translate(-50%,-50%) scale(var(--halo-scale,1)) rotate(var(--halo-spin,0deg));opacity:var(--halo-opacity,.9);border-radius:50%;z-index:0;pointer-events:none;background:radial-gradient(circle,#ffd98a55 0,#ffb85a22 32%,transparent 62%),repeating-conic-gradient(from 0deg,#ffd98a1f 0 4deg,transparent 4deg 15deg);-webkit-mask:radial-gradient(circle,#000 30%,transparent 68%);mask:radial-gradient(circle,#000 30%,transparent 68%)}
+.garud-blessed.brand-logo{position:absolute;left:50%;top:42%;width:calc(var(--vm-w) * .52);height:calc(var(--vm-w) * .52);z-index:1;transform:translate(-50%,-38%) scale(var(--blessed-scale,1));opacity:var(--blessed-opacity,1);outline:1px solid #e9c987;outline-offset:5px;box-shadow:0 0 40px #ffcf7a66}
+.varmala{position:absolute;left:50%;top:42%;width:var(--vm-w);aspect-ratio:200/240;z-index:3;transform:translate(-50%,-50%) translate(var(--vm-x,0px),var(--vm-y,0px)) rotate(var(--vm-rot,0deg)) scale(var(--vm-scale,1));transform-origin:50% 4%;filter:drop-shadow(0 6px 14px #0007);will-change:transform}
+.varmala svg{width:100%;height:100%;display:block;overflow:visible}
+.garud{position:absolute;left:50%;top:50%;width:min(54vw,330px);height:auto;z-index:4;transform:translate(-50%,-50%) translate(var(--garud-x,-80vw),var(--garud-y,-20vh)) rotate(var(--garud-tilt,0deg)) scale(var(--garud-scale,1));filter:drop-shadow(0 0 22px #ffc76d66);will-change:transform;overflow:visible}
+.garud .wing{transform-box:view-box;animation:garud-flap 1s ease-in-out infinite}
+.garud .wing-near{transform-origin:166px 110px}
+.garud .wing-far{transform-origin:150px 106px;animation-delay:-.08s}
+.garud-crown{filter:drop-shadow(0 0 4px #ffd67a)}
+.garud-copy{position:absolute;left:20px;right:20px;bottom:max(11%,84px);z-index:2;opacity:var(--copy-opacity,1);transform:translateY(var(--copy-y,0px))}
+.garud-copy .eyebrow{color:#e5c88f;font-size:9px;letter-spacing:3px;margin-bottom:10px}
+.garud-copy h2{color:#fbebc6;font-size:clamp(32px,4vw,52px);text-shadow:0 2px 24px #0b0d24}
+.garud-copy h2 em{color:#ffcf7a}
+.garud-copy>p:last-child{font-family:var(--serif);font-size:18px;line-height:1.45;color:#e2cfae;margin-top:10px;font-style:italic;text-shadow:0 1px 3px #0b0d24,0 0 18px #0b0d24}
+.garud-palace{position:absolute;left:0;right:0;bottom:0;width:100%;height:17%;min-height:100px;z-index:1}
+.garud-palace>path{fill:#120a17}
+.palace-lights rect{fill:#ffc163;filter:drop-shadow(0 0 5px #ffb04d);animation:window-glow 5s ease-in-out infinite alternate}
+.palace-lights rect:nth-child(odd){animation-delay:-2.5s}
+.diyas{position:absolute;left:4%;right:4%;bottom:14px;display:flex;justify-content:space-between;z-index:2;pointer-events:none}
+.diyas i{position:relative;width:26px;height:22px}
+.diyas i:before{content:'';position:absolute;left:0;right:0;bottom:0;height:10px;border-radius:2px 2px 14px 14px;background:linear-gradient(#c9693a,#7c3219);box-shadow:0 -1px 0 #f0a46c inset}
+.diyas i:after{content:'';position:absolute;left:50%;bottom:9px;width:8px;height:14px;margin-left:-4px;border-radius:50% 50% 50% 50%/62% 62% 38% 38%;background:radial-gradient(circle at 50% 75%,#fff6d6 0,#ffd166 35%,#ff8a2a 75%,transparent 78%);box-shadow:0 0 14px 4px #ffb34d88,0 0 32px 10px #ff8a2a33;transform-origin:50% 100%;animation:diya-flicker 1.8s ease-in-out infinite alternate}
+.diyas i:nth-child(3n):after{animation-duration:2.3s}.diyas i:nth-child(3n+1):after{animation-duration:1.5s;animation-delay:-.6s}
+@keyframes garud-flap{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(26deg) scaleY(.82)}}
+@keyframes diya-flicker{0%{transform:scale(1,1) rotate(-2deg)}50%{transform:scale(.94,1.06) rotate(1deg)}100%{transform:scale(1.04,.95) rotate(2deg)}}
+@keyframes window-glow{from{opacity:.75}to{opacity:1}}
+@keyframes om-breathe{0%,100%{text-shadow:0 0 18px #ffb84d,0 0 46px #ff9d3a88}50%{text-shadow:0 0 26px #ffc56b,0 0 70px #ff9d3aaa}}
+@keyframes garud-twinkle{from{opacity:.45}to{opacity:.85}}
+@media(max-width:640px){.garud-stage{--vm-w:min(44vw,190px)}.garud-shloka p{font-size:12px}.om-glyph{font-size:36px;margin-bottom:8px}.garud-copy{bottom:max(10%,76px)}.garud-copy>p:last-child{font-size:16px}.diyas{left:2%;right:2%}.diyas i{width:20px}.diyas i:nth-child(n+8){display:none}}
+@media(max-height:700px) and (max-width:640px){.garud-stage{--vm-w:min(36vw,150px)}.garud-shloka{top:52px}.garud-copy>p:last-child{display:none}}
+/* Static, fully composed scene when motion is off or reduced. */
+.motion-off .garud-scroll{height:auto}
+.motion-off .garud-stage{position:relative;height:100svh}
+.motion-off .garud{--garud-x:min(27vw,320px)!important;--garud-y:-24svh!important;--garud-tilt:-8deg!important;--garud-scale:.62!important}
+.motion-off .varmala{--vm-x:0px!important;--vm-y:0px!important;--vm-rot:0deg!important;--vm-scale:1!important}
+.motion-off .garud-shloka,.motion-off .garud-copy,.motion-off .garud-blessed,.motion-off .garud-halo{opacity:1!important;transform:translate(0,0)}
+.motion-off .garud-blessed.brand-logo{transform:translate(-50%,-38%)}
+.motion-off .garud-halo{transform:translate(-50%,-50%)}
